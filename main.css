@@ -1,0 +1,84 @@
+p {
+    color: red;
+    font-family: Arial;
+    text-align: center;
+}
+
+body{
+    margin-top: 175px;
+    background-image: url(shrek.gif);
+}
+/*this class will center a non text element, you may need to set a width since by default many
+elements take up the full width of the page*/
+.centerElement{
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+#StickyHeader{
+    padding: 10px;
+    border: 10px ridge black;
+    margin: 10px;
+    position: fixed;
+    top: 0;
+    width: calc(100% - 70px);
+    background-color: white;
+}
+#HomePageHeader{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 25px;
+    text-align: center;
+
+}
+#PriceTicker{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 15px;
+    text-align:  right;
+}
+
+#BodySquare{
+    border: 10px ridge tomato;
+    background-color: goldenrod;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#BodyText{
+    color: white;
+    font-size: 20px;
+}
+#InfoFormSquare
+{
+    border: 10px ridge tomato;
+    background-color: goldenrod;
+    width: 100%;
+    height: 450px;
+}
+
+img{
+    border-top: 10px ridge black;
+    border-bottom: 5px dashed purple;
+    border-left: 10px groove sienna;
+    border-right: 10px inset lavender;
+    margin-top: 20px;
+}
+.card-number{
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 14px;
+}
+h1, h2, h3, h4, h5, h6 {
+    animation-name: spinner;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    transform-style: preserve-3d;
+    text-align:center;
+  }
+  @keyframes spinner {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(-360deg);
+    }
+    }
